@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="description description description description description description">
 
-    <title>Site name</title>
+    <title>EKM</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
@@ -18,45 +17,54 @@
     <!-- header -->
     <header id="header" class="header">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-10">
+            <div class="row justify-content-between align-items-center justify-content-sm-center">
+                <div class="col-xl-10">
                     <ul class="menu">
-                        <li>
-                            <a href="#">О нас</a>
+                        <li class="col-sm-2">
+                            <a href="#" class="nav_link">О нас</a>
                         </li>
-                        <li>
-                            <a href="#">Услуги</a>
+                        <li class="col-sm-2">
+                            <a href="#" class="nav_link">Услуги</a>
                         </li>
-                        <li>
-                            <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                        <li class="col-sm-3 text-center d-none d-sm-block">
+                            <a href="#" class="logo_link"><img src="assets/img/logo.png" alt=""></a>
                         </li>
-                        <li>
-                            <a href="#">Партнеры</a>
+                        <li class="col-sm-2 text-right">
+                            <a href="#" class="nav_link">Партнеры</a>
                         </li>
-                        <li>
-                            <a href="#">Контакты</a>
+                        <li class="col-sm-2 text-right">
+                            <a href="#" class="nav_link">Контакты</a>
                         </li>
                     </ul>
                 </div>
+                <div class="col-6">
+                    <a href="#" class="logo_link d-sm-none"><img src="assets/img/logo.png" alt=""></a>
+                </div>
+                <div id="menu_button" class="col-6 toggle_button">
+                    <div class="button_item button_item__top"></div>
+                    <div class="button_item button_item__mid"></div>
+                    <div class="button_item button_item__bot"></div>
+                </div>
+
             </div>
         </div>
     </header>
     <!-- header -->
     <!-- intro -->
     <section id="intro" class="section_intro">
-        <video poster="assets/img/intro.jpg" autoplay muted loop id="myVideo">
+        <video poster="assets/img/intro.jpg" autoplay muted loop id="myVideo" class="d-none d-xl-inline-block">
             <source src="assets/video/video_2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         </video>
 
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-sm-10">
                     <div class="intro_text">
                         <p class="top_text">Мы дарим вам самое важное - наше время и тем самым экономим вам ваше.</p>
                         <p class="bot_text">Удачный обмен, не так ли?</p>
                         <div class="intro_buttons">
-                            <a href="#" class="btn btn__primary">Позвонить</a>
-                            <a href="#" class="btn btn__secondary ml-5">Обратный звонок</a>
+                            <a href="#" class="btn btn__primary mb-4 mb-sm-0">Позвонить</a>
+                            <a href="#feedback" class="btn btn__secondary ml-sm-5">Оставить заявку</a>
                         </div>
                     </div>
                 </div>
@@ -72,71 +80,74 @@
                     Мы предлагаем
                 </div>
             </div>
-            <div class="d-flex justify-content-between">
-                <div class="promo_item">
-                    <img src="assets/img/promo/1.jpg" alt="" class="">
-                    <a class="" data-toggle="collapse" href="#promoCollapse1" role="button" aria-expanded="false" aria-controls="promoCollapse1">
-                        КОРПОРАТИВНЫЕ УСЛУГИ                      
-                    </a>
-                </div>
-                <div class="promo_item">
-                    <img src="assets/img/promo/2.jpg" alt="" class="">
-                    <a class="" data-toggle="collapse" href="#promoCollapse2" role="button" aria-expanded="false" aria-controls="promoCollapse2">
-                        ИНДИВИДУАЛЬНЫЕ УСЛУГИ                        
-                    </a>
-                </div>
-                <div class="promo_item">
-                    <img src="assets/img/promo/3.jpg" alt="" class="">
-                    <a class="" data-toggle="collapse" href="#promoCollapse3" role="button" aria-expanded="false" aria-controls="promoCollapse3">
-                        ЛИЧНЫЙ АССИСТЕНТ                        
-                    </a>
-                </div>
-            </div>
-            <div class="row justify-content-between promo_description_wrap">
-                <div class="promo_description">
-                    <div class="text_box collapse multi-collapse" id="promoCollapse1">
-                        <p class="title">
-                            Для Ваших клиентов
-                        </p>
-                        <p>
-                            Дополнительная услуга консьерж сервис от EKM гарантировано привлечет больше клиентов в Вашу компанию, а также в целом повысит интерес к ней.
-                        </p>
-                        <p class="title">
-                            Для Ваших сотрудников
-                        </p>
-                        <p>
-                            Бытовые проблемы и нерешенные дела личного характера, мешают многим сосредоточиться на важных рабочих вопросах. Консьерж сервис EKM – это отличная возможность избавится от будничных проблем, и сосредоточить свои силы на достижении служебных целей.
-                        </p>
-                    </div>
-                </div>
-                <div class="promo_description">
-                    <div class="text_box collapse multi-collapse" id="promoCollapse2">
-                        <p>
-                            Мы готовы помочь вам с любыми вашими запросами. Мы всегда подстраиваемся к каждому нашему клиенту индивидуально. Мы знаем какой бренд одежды ваш любимый, мы знаем на что у вас аллергия, мы знаем ваше любимое блюдо и знаем какие места вы не любите посещать.
-                        </p>
-                        <p>
-                            Нам всегда есть что посоветовать вам опираясь на ваши вкусы.
-                        </p>
-                        <p>
-                            Это и есть наш индивидуальный подход.
-                        </p>
-                    </div>
-                </div>
-                <div class="promo_description">
-                    <div class="text_box collapse multi-collapse" id="promoCollapse3">
-                        <p class="title">
-                            Личный ассистент или персональный помощник –
-                        </p>
-                        <p>
-                            это лицо, выполняющее функции ассистента, секретаря или помощника руководителя организации или другого физического лица, занимающего соответствующую должность.
-                        </p>
-                        <p>
-                            Основной функцией персонального ассистента является помощь руководителю в решении повседневных вопросов и качественном выполнении поставленных задач.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <div class="promo_swiper">
+                <div class="d-flex justify-content-between swiper-wrapper">
 
+                    <div class="promo_item_wrap swiper-slide">
+                        <div class="promo_item" type="button" data-toggle="collapse" data-target="#promoCollapse1" aria-expanded="false" aria-controls="promoCollapse1">
+                            <img src="assets/img/promo/1.jpg" alt="" class="">
+                            <div class="promo_title">КОРПОРАТИВНЫЕ УСЛУГИ</div>
+                        </div>
+                        <div class="promo_description">
+                            <div class="text_box collapse multi-collapse" id="promoCollapse1">
+                                <p class="title">
+                                    Для Ваших клиентов
+                                </p>
+                                <p>
+                                    Дополнительная услуга консьерж сервис от EKM гарантировано привлечет больше клиентов в Вашу компанию, а также в целом повысит интерес к ней.
+                                </p>
+                                <p class="title">
+                                    Для Ваших сотрудников
+                                </p>
+                                <p>
+                                    Бытовые проблемы и нерешенные дела личного характера, мешают многим сосредоточиться на важных рабочих вопросах. Консьерж сервис EKM – это отличная возможность избавится от будничных проблем, и сосредоточить свои силы на достижении служебных целей.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo_item_wrap swiper-slide">
+                        <div class="promo_item" type="button" data-toggle="collapse" data-target="#promoCollapse2" aria-expanded="false" aria-controls="promoCollapse2">
+                            <img src="assets/img/promo/2.jpg" alt="" class="">
+                            <div class="promo_title">ИНДИВИДУАЛЬНЫЕ УСЛУГИ</div>
+                        </div>
+                        <div class="promo_description">
+                            <div class="text_box collapse multi-collapse" id="promoCollapse2">
+                                <p>
+                                    Мы готовы помочь вам с любыми вашими запросами. Мы всегда подстраиваемся к каждому нашему клиенту индивидуально. Мы знаем какой бренд одежды ваш любимый, мы знаем на что у вас аллергия, мы знаем ваше любимое блюдо и знаем какие места вы не любите посещать.
+                                </p>
+                                <p>
+                                    Нам всегда есть что посоветовать вам опираясь на ваши вкусы.
+                                </p>
+                                <p>
+                                    Это и есть наш индивидуальный подход.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promo_item_wrap swiper-slide">
+                        <div class="promo_item" type="button" data-toggle="collapse" data-target="#promoCollapse3" aria-expanded="false" aria-controls="promoCollapse3">
+                            <img src="assets/img/promo/3.jpg" alt="" class="">
+                            <div class="promo_title">ЛИЧНЫЙ АССИСТЕНТ</div>
+                        </div>
+                        <div class="promo_description">
+                            <div class="text_box collapse multi-collapse" id="promoCollapse3">
+                                <p class="title">
+                                    Личный ассистент или персональный помощник –
+                                </p>
+                                <p>
+                                    это лицо, выполняющее функции ассистента, секретаря или помощника руководителя организации или другого физического лица, занимающего соответствующую должность.
+                                </p>
+                                <p>
+                                    Основной функцией персонального ассистента является помощь руководителю в решении повседневных вопросов и качественном выполнении поставленных задач.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
     <!-- / promo -->
@@ -156,7 +167,9 @@
                             Управление <br> домашним <br> Хозяйством
                         </div>
                         <div class="service_item__list">
-                            <img src="assets/img/services/1.jpg" alt="" class="service_item__image">
+                            <img src="assets/img/services/1.jpg" alt="" class="service_item__image d-none d-lg-inline">
+                            <img src="assets/img/services/1-ipad.jpg" alt="" class="service_item__image d-lg-none">
+
                             <ul>
                                 <li>
                                     <a class="collapsed" type="button" data-toggle="collapse" data-target="#collapseOne_AccordionService1" aria-expanded="true" aria-controls="">
@@ -235,12 +248,13 @@
                 </div>
 
                 <div class="service_item accordion" id="accordionService2">
-                    <div class="service_visible_block flex-row-reverse">
+                    <div class="service_visible_block flex-sm-row-reverse">
                         <div class="serv_title">
                             Покупки <br> ЛАЙФСТАЙЛ
                         </div>
                         <div class="service_item__list">
-                            <img src="assets/img/services/2.jpg" alt="" class="service_item__image">
+                            <img src="assets/img/services/2.jpg" alt="" class="service_item__image d-none d-lg-inline">
+                            <img src="assets/img/services/2-ipad.jpg" alt="" class="service_item__image d-lg-none">
 
                             <ul>
                                 <li>
@@ -332,7 +346,8 @@
                             МЕДИЦИНА, <br> ОЗДОРОВЛЕНИЕ И <br> СПОРТ
                         </div>
                         <div class="service_item__list">
-                            <img src="assets/img/services/3.jpg" alt="" class="service_item__image">
+                            <img src="assets/img/services/3.jpg" alt="" class="service_item__image d-none d-lg-inline">
+                            <img src="assets/img/services/3-ipad.jpg" alt="" class="service_item__image d-lg-none">
 
                             <ul>
                                 <li>
@@ -409,12 +424,13 @@
                 </div>
 
                 <div class="service_item accordion" id="accordionService4">
-                    <div class="service_visible_block flex-row-reverse">
+                    <div class="service_visible_block flex-sm-row-reverse">
                         <div class="serv_title">
                             ИНФОРМАЦИОННЫЕ <br> УСЛУГИ
                         </div>
                         <div class="service_item__list">
-                            <img src="assets/img/services/4.jpg" alt="" class="service_item__image">
+                            <img src="assets/img/services/4.jpg" alt="" class="service_item__image d-none d-lg-inline">
+                            <img src="assets/img/services/4-ipad.jpg" alt="" class="service_item__image d-lg-none">
 
                             <ul>
                                 <li>
@@ -498,7 +514,8 @@
                             Досуг
                         </div>
                         <div class="service_item__list">
-                            <img src="assets/img/services/5.jpg" alt="" class="service_item__image">
+                            <img src="assets/img/services/5.jpg" alt="" class="service_item__image d-none d-lg-inline">
+                            <img src="assets/img/services/5-ipad.jpg" alt="" class="service_item__image d-lg-none">
 
                             <ul>
                                 <li>
@@ -575,12 +592,13 @@
                 </div>
 
                 <div class="service_item accordion" id="accordionService6">
-                    <div class="service_visible_block flex-row-reverse">
+                    <div class="service_visible_block flex-sm-row-reverse">
                         <div class="serv_title">
                             ОХРАНА <br> ЮРИДИЧЕСКие <br> консультации
                         </div>
                         <div class="service_item__list">
-                            <img src="assets/img/services/6.jpg" alt="" class="service_item__image">
+                            <img src="assets/img/services/6.jpg" alt="" class="service_item__image d-none d-lg-inline">
+                            <img src="assets/img/services/6-ipad.jpg" alt="" class="service_item__image d-lg-none">
 
                             <ul>
                                 <li>
@@ -688,7 +706,8 @@
                             ТУРИСТИЧЕСКИЕ <br> УСЛУГИ
                         </div>
                         <div class="service_item__list">
-                            <img src="assets/img/services/7.jpg" alt="" class="service_item__image">
+                            <img src="assets/img/services/7.jpg" alt="" class="service_item__image d-none d-lg-inline">
+                            <img src="assets/img/services/7-ipad.jpg" alt="" class="service_item__image d-lg-none">
 
                             <ul>
                                 <li>
@@ -790,12 +809,20 @@
     <!-- advantages -->
     <section id="advantages" class="section_advantages">
         <div class="container">
+            <div class="row d-sm-none">
+                <div class="section_title">
+                    Наши преимущества
+                </div>
+            </div>
             <div class="row">
-                <div class="col-6 pr-5">
+                <div class="d-none d-lg-block pr-xl-5">
                     <img src="assets/img/advantages.jpg" alt="" class="w-100">
                 </div>
-                <div class="col-6 pl-5 advantages_text">
-                    <div class="section_title">
+                <div class="d-sm-none p-0">
+                    <img src="assets/img/advantages-mob.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-lg-6 pl-xl-5 advantages_text">
+                    <div class="section_title d-none d-sm-black">
                         Наши преимущества
                     </div>
                     <p class="advantages_title">
@@ -828,7 +855,7 @@
     <section id="stats" class="section_stats">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <div class="v">
                         <div class="stats_num">
                             9
@@ -839,7 +866,7 @@
 
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <div class="stats_item">
                         <div class="stats_num">
                             32
@@ -850,7 +877,7 @@
 
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3 mt-5 mt-lg-0">
                     <div class="stats_item">
                         <div class="stats_num">
                             110
@@ -861,7 +888,7 @@
 
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3 mt-5 mt-lg-0">
                     <div class="stats_item">
                         <div class="stats_num">
                             90+
@@ -883,7 +910,7 @@
                 <div class="section_title">О нас</div>
             </div>
             <div class="row">
-                <div class="col-6 pr-5 about_text">
+                <div class="col-lg-6 pr-xl-5 about_text">
                     <p class="about_title">
                         EKM, приветствует Вас!
                     </p>
@@ -898,18 +925,21 @@
                         Наслаждайтесь каждым мгновением, EKM
                     </p>
                 </div>
-                <div class="col-6 pl-5">
+                <div class="col-lg-6 p-0 px-sm-3 pl-xl-5">
                     <!-- Swiper -->
                     <div class="about_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="assets/img/about/1.jpg" alt="">
+                                <img src="assets/img/about/1.jpg" alt="" class="d-none d-lg-inline">
+                                <img src="assets/img/about/1-mob.jpg" alt="" class="d-lg-none">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/img/about/2.jpg" alt="">
+                                <img src="assets/img/about/2.jpg" alt="" class="d-none d-lg-inline">
+                                <img src="assets/img/about/2-mob.jpg" alt="" class="d-lg-none">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/img/about/3.jpg" alt="">
+                                <img src="assets/img/about/3.jpg" alt="" class="d-none d-lg-inline">
+                                <img src="assets/img/about/3-mob.jpg" alt="" class="d-lg-none">
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -928,7 +958,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-5">
+                <div class="col-sm-6 col-xl-5">
                     <img src="assets/img/cards/silver.png" alt="" class="w-100">
                     <ul class="card_text">
                         <li>
@@ -945,9 +975,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-5">
+                <div class="col-sm-6 col-xl-5">
                     <img src="assets/img/cards/gold.png" alt="" class="w-100">
-                    <ul class="card_text">
+                    <ul class="card_text mb-0">
                         <li>
                             срок действия 12 месяцев
                         </li>
@@ -979,26 +1009,26 @@
                     Компания EKM работает в тесном сотрудничестве с проверенными премиум компаниями и поставщиками услуг, которые всячески оказывают нам содействие в стремлении активно предлагать и развивать luxury life и премиум консьерж услуги в Украине!
                 </div>
             </div>
-            <div class="d-flex flex-wrap justify-content-center align-items-center">
-                <div class="mx-4">
+            <div class="row partners_item_wrap">
+                <div class="col-6 partners_item">
                     <img src="assets/img/partners/forbes.png" alt="" class="">
                 </div>
-                <div class="mx-4">
+                <div class="col-6 partners_item">
                     <img src="assets/img/partners/radisson.png" alt="" class="">
                 </div>
-                <div class="mx-4">
+                <div class="col-6 partners_item">
                     <img src="assets/img/partners/vogue.png" alt="" class="">
                 </div>
-                <div class="mx-4">
+                <div class="col-6 partners_item">
                     <img src="assets/img/partners/premier.png" alt="" class="">
                 </div>
-                <div class="mx-4 mt-5">
+                <div class="col-6 partners_item">
                     <img src="assets/img/partners/fairmont.png" alt="" class="">
                 </div>
-                <div class="mx-4 mt-5">
+                <div class="col-6 partners_item">
                     <img src="assets/img/partners/fujiwara_yoshi.png" alt="" class="">
                 </div>
-                <div class="mx-4 mt-5">
+                <div class="col-6 partners_item">
                     <img src="assets/img/partners/intercontinental.png" alt="" class="">
                 </div>
             </div>
@@ -1006,7 +1036,7 @@
     </section>
     <!-- / partners -->
     <!-- feedback -->
-    <section class="section_feedback">
+    <section id="feedback" class="section_feedback">
         <div class="container">
             <div class="row">
                 <div class="section_title">
@@ -1014,13 +1044,13 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-7">
+                <div class="col-lg-9 col-xl-7">
                     <form action="">
-                        <div class="row">
-                            <div class="col-6">
+                        <div class="row flex-column flex-sm-row">
+                            <div class="col col-sm-6">
                                 <input type="text" placeholder="Имя">
                             </div>
-                            <div class="col-6">
+                            <div class="col col-sm-6">
                                 <input type="text" placeholder="Фамилия">
                             </div>
                         </div>
@@ -1032,6 +1062,9 @@
                         </div>
                         <div class="col">
                             <textarea name="" rows="5" placeholder="Сообщение"></textarea>
+                        </div>
+                        <div class="col text-right">
+                            <button class="btn btn__form mt-5" type="submit">Отправить</button>
                         </div>
                     </form>
                 </div>
@@ -1048,15 +1081,15 @@
                 </div>
             </div>
             <div class="row align-items-center ">
-                <div class="col">
+                <div class="col-sm-4 text-center">
                     <a class="logo">
                         <img src="assets/img/logo.png" alt="">
                     </a>
                 </div>
-                <div class="col text-center">
+                <div class="col-sm-4 text-center mt-5 mt-sm-0">
                     <a href="mailto:">manager@ekm.kiev.ua</a>
                 </div>
-                <div class="col text-right">
+                <div class="col-sm-4 text-center mt-5 mt-sm-0 text-sm-right">
                     <a href="tel:+380996661488">380996661488</a><br>
                     <a href="tel:+380996661488">380996661488</a>
                 </div>
@@ -1067,23 +1100,10 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.about_swiper', {
-            loop: true,
-            spaceBetween: 30,
-            speed: 2800,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            autoplay: {
-                delay: 1000,
-            },
-        });
-    </script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
     <script src="js/script.js "></script>
+    <script src="js/swiper.js "></script>
 </body>
 
 </html>
