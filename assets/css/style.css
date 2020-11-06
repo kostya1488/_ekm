@@ -609,6 +609,7 @@ section {
     justify-content: center; }
     .section_partners .partners_item_wrap .partners_item {
       margin: 0;
+      width: 100%;
       text-align: center;
       margin-top: 40px; } }
 
