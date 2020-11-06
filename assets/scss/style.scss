@@ -67,10 +67,12 @@
                     color: #fff;
                 }
             }
-            @media (max-width: $screen_xs_max) {
-                width: 100%;
+            @media (max-width: $screen_xl_max) {
                 padding: 10px 24px;
                 font-size: 16px;
+            }
+            @media (max-width: $screen_xs_max) {
+                width: 100%;
             }
         }
         .section_title {
@@ -161,7 +163,7 @@
                 }
             }
         }
-        @media (max-width: $screen_md_max) {
+        @media (max-width: $screen_xl_max) {
             .menu {
                 a {
                     font-size: 16px;
@@ -262,33 +264,36 @@
                 margin-bottom: 35px;
             }
             .bot_text {
-                font-size: 36px;
-                font-weight: 400;
-                margin-bottom: 65px;
+                font-family: 'Prata', serif;
+                font-size: 26px;
+                margin-bottom: 38px;
             }
         }
         @media (min-width: $screen_sm) and (max-width: $screen_lg_max) {
             background: url(../img/intro-ipad.jpg) no-repeat 0 0;
             background-size: cover;
         }
-        @media (max-width: $screen_md_max) {
-            background: url(../img/intro-mob.jpg) no-repeat 0 0;
-            background-size: cover;
+        @media (max-width: $screen_xl_max) {
+            align-items: flex-end;
             .intro_text {
+                padding-bottom: 40px;
                 .top_text {
                     font-size: 36px;
                     margin-bottom: 20px;
                 }
-                .bot_text {
-                    font-size: 26px;
-                    margin-bottom: 38px;
-                }
             }
+            .intro_buttons {
+                margin-top: 50px;
+            }
+        }
+        @media (max-width: $screen_md_max) {
+            background: url(../img/intro-mob.jpg) no-repeat 0 0;
+            background-size: cover;
         }
         @media (max-width: $screen_xs_max) {
             align-items: flex-end;
-            padding-bottom: 100px;
             .intro_text {
+                padding-bottom: 100px;
                 .top_text {
                     font-size: 26px;
                     // margin-bottom: 38px;
@@ -378,12 +383,13 @@
         .promo_description {
             max-width: 360px;
             .text_box {
+                text-align: center;
                 position: relative;
                 z-index: 1;
                 box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
                 padding: 25px;
                 p {
-                    font-weight: 600;
+                    // font-weight: 600;
                     font-size: 20px;
                     color: #482111;
                     &.title {
@@ -420,7 +426,7 @@
             .serv_title {
                 flex: 1;
                 background-color: #482111;
-                font-weight: 500;
+                // font-weight: 500;
                 font-size: 24px;
                 text-align: center;
                 text-transform: uppercase;
@@ -466,7 +472,7 @@
                     a {
                         display: flex;
                         align-items: center;
-                        font-weight: 600;
+                        // font-weight: 600;
                         color: #FFFFFF;
                         text-transform: uppercase;
                         .service_indicator {
@@ -483,10 +489,10 @@
                                 transition: .3s;
                             }
                             .item_left {
-                                transform: translateX(1.3px) rotate(-35deg);
+                                transform: translateX(1.7px) rotate(-35deg);
                             }
                             .item_right {
-                                transform: translateX(-1.3px) rotate(35deg);
+                                transform: translateX(-1.7px) rotate(35deg);
                             }
                         }
                         &.collapsed {
@@ -497,10 +503,10 @@
                                     // border-radius: 0px;
                                 }
                                 .item_left {
-                                    transform: translateX(1.3px) rotate(35deg);
+                                    transform: translateX(1.7px) rotate(35deg);
                                 }
                                 .item_right {
-                                    transform: translateX(-1.3px) rotate(-35deg);
+                                    transform: translateX(-1.7px) rotate(-35deg);
                                 }
                             }
                         }
@@ -525,7 +531,8 @@
             .hidden_text_box {
                 // padding: 60px 100px;
                 p {
-                    font-weight: 600;
+                    // font-weight: 600;
+                    // text-align: center;
                     font-size: 24px;
                     text-transform: uppercase;
                     color: #FFFFFF;
@@ -535,7 +542,7 @@
                     margin-top: 5px;
                 }
                 li {
-                    font-weight: 500;
+                    // font-weight: 500;
                     font-size: 18px;
                     color: #FFFFFF;
                     padding-left: 40px;
@@ -635,14 +642,16 @@
         .advantages_text {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            // justify-content: space-between;
             p {
-                font-weight: 600;
+                // font-weight: 600;
                 font-size: 18px;
                 color: #482111;
                 margin-bottom: 40px;
                 &.advantages_title {
+                    margin-bottom: 10px;
                     font-size: 24px;
+                    font-weight: 600;
                 }
                 span {
                     font-family: 'Prata', serif;
@@ -719,7 +728,7 @@
             flex-direction: column;
             justify-content: space-between;
             p {
-                font-weight: 600;
+                // font-weight: 600;
                 font-size: 20px;
                 color: #482111;
                 // margin-bottom: 60px;
@@ -794,7 +803,7 @@
             align-items: center;
         }
         .partners_text {
-            font-weight: 500;
+            // font-weight: 500;
             font-size: 24px;
             text-align: center;
             color: #482111;
@@ -875,6 +884,7 @@
             &.form_send {
                 form {
                     transform: rotateX(90deg);
+                    opacity: 0;
                 }
                 .form_response {
                     opacity: 1;

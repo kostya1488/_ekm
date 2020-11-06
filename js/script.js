@@ -1,21 +1,20 @@
-// toggle menu button
-var menuButton = document.getElementById('menu_button');
-menuButton.onclick = () => document.body.classList.toggle('menu_active');
-// ------------------
+$(document).ready(function() {
 
-var formButton = document.getElementById('form_button');
-var formWrap = document.querySelector('.form_wrap');
+    // toggle menu button
+    $('#menu_button').click(function(e) {
+        e.preventDefault();
+        $('.body').toggleClass('menu_active')
+    });
+    // hide menu and smoth scrolling to elem by id
+    $('.nav_link').click(function(e) {
+        e.preventDefault();
 
-formButton.onclick = () => {
-    formWrap.classList.add('form_send');
-    return false
-}
+        $('.body').removeClass('menu_active')
 
-var navLink = document.querySelectorAll('.nav_link');
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 800);
 
-navLink.forEach(element => {
-    element.onclick = () => {
-        document.body.classList.remove('menu_active');
-    }
+    });
 
 });

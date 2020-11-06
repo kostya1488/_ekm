@@ -1,29 +1,35 @@
 <?php
-$to = "mail@feleton.com";
+$to = "manager@ekm.kiev.ua";
 $subject = "Заявка с сайта";
-$headers = "From: message@feleton.com";
+$headers = "From: message@ekm.kiev.ua";
 
 if (
 
 isset($_POST["name"]) && 
-isset($_POST["phone"]) && 
+isset($_POST["surname"]) && 
 isset($_POST["email"]) && 
+isset($_POST["tel"]) && 
 isset($_POST["message"])
 
 ) { 
 
 	// Формируем массив для JSON ответа
     $result = array(
-    	'Имя' => $_POST["name"],
-        'Телефон' => $_POST["phone"],
-        'Email' => $_POST["email"],
-    	'Сообщение' => $_POST["message"]        
+    	'name' => $_POST["name"],
+        'surname' => $_POST["surname"],
+        'email' => $_POST["email"],
+        'tel' => $_POST["tel"],
+    	'message' => $_POST["message"]        
     ); 
 
     // Переводим массив в JSON
     echo json_encode($result); 
 
     foreach ($result as $key => $value) {
+        if ($value == "") {
+            $value = "не заполнено";
+        };
+  
         $txt_for_mail .= $key . ": " . $value ."\n";
  }
 
